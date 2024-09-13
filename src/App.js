@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { AuthProvider, AuthContext } from './components/AuthContext';
-import Register from './components/Register';
-import Login from './components/Login';
-import TodoList from './components/TodoList';
-import AddTodo from './components/AddTodo';
-import TodoPage from './pages/TodoPage';
-import RegisterPage from './pages/RegisterPage';
-import LoginPage from './pages/LoginPage';
+import { AuthProvider, AuthContext } from './src/components/pages/AuthContext';
+import Register from './src/components/pages/Register';
+import Login from './src/components/pages/Login';
+import TodoList from './src/components/pages/TodoList';
+import AddTodo from './src/components/pages/AddTodo';
+import TodoPage from './src/components/pages/TodoPage';
+import RegisterPage from './src/components/pages/RegisterPage';
+import LoginPage from './src/components/pages/LoginPage';
 
 const App = () => {
   const [todos, setTodos] = useState([]);
